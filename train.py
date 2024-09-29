@@ -26,11 +26,15 @@ elif isinstance(data, dict):
     #     print(f"{key}: {data[key]}")
 
 count = 1
-for tempKey, tempValue in data:
+for oneKey in keys:
     count += 1
     if count > 5:
         break
-    print(f'tempKey:{tempKey} : tempValue:{tempValue}')
+
+    print(f'item0{data[oneKey][0]}')
+    input_text, output_text = data[oneKey][0]
+    print(f'input_text: {input_text}')
+    print(f'output_text: {output_text}')
 
 # # 提取文本内容
 # texts = []
