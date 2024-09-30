@@ -73,6 +73,10 @@ dataset = tf.data.Dataset.from_tensor_slices((
     }
 ))
 
+print(outputs_ids)
+print(output_attention_masks)
+
+
 # 按批次加载
 batch_size = 16
 dataset = dataset.batch(batch_size)
